@@ -3,10 +3,10 @@ import { IsNotEmpty, IsOptional, IsArray, ArrayNotEmpty, IsInt } from 'class-val
 
 export class CreateNoteDto {
     @IsNotEmpty()
-    title: string;
+    title!: string;
 
     @IsNotEmpty()
-    content: string;
+    content!: string;
 
     @IsOptional()
     @IsArray()
