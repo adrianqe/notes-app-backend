@@ -7,9 +7,12 @@ async function bootstrap() {
 
   app.enableCors({
     origin: [
+      'http://localhost:5173',
       'https://notes-app-frontend-zeta-two.vercel.app',
       'https://notes-app-frontend-mvn80doae-adrian-quiros-elizondos-projects.vercel.app',
+      'https://notes-app-frontend-git-main-adrian-quiros-elizondos-projects.vercel.app',
     ],
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   });
   app.useGlobalPipes(new ValidationPipe());
   await app.listen(process.env.PORT ?? 3000);
