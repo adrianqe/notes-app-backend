@@ -7,8 +7,8 @@ async function bootstrap() {
 
   app.enableCors({
     origin: [
-      'https://notes-app-frontend-zeta-two.vercel.app/',
-      'https://notes-app-frontend-mvn80doae-adrian-quiros-elizondos-projects.vercel.app/',
+      'https://notes-app-frontend-zeta-two.vercel.app',
+      'https://notes-app-frontend-mvn80doae-adrian-quiros-elizondos-projects.vercel.app',
     ],
   });
   app.useGlobalPipes(new ValidationPipe());
