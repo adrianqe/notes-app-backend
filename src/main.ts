@@ -13,6 +13,7 @@ async function bootstrap() {
       'https://notes-app-frontend-git-main-adrian-quiros-elizondos-projects.vercel.app',
     ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // solo si usás cookies
   });
   app.useGlobalPipes(new ValidationPipe());
   await app.listen(process.env.PORT ?? 3000);
